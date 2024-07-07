@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <img src="home_image.jpg">
+
+  <link rel="stylesheet"
+    href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+  <df-messenger 
+          location="us-central1" 
+          project-id="customer-demo-405107" 
+          agent-id="e8b69789-6c8b-4407-9911-0ef227eb146d"
+          language-code="en" 
+          max-query-length="-1"
+          intent="WELCOME">
+    
+    <df-messenger-chat-bubble 
+          chat-title="FinConz"
+          chat-title-icon = "chat_icon.png"
+          bot-writing-image= "chat_icon.png"
+          cha>
+    </df-messenger-chat-bubble>
+  </df-messenger>
+  <style>
+    df-messenger {
+      z-index: 999;
+      position: fixed;
+      --df-messenger-titlebar-background:rgb(94, 131, 255);
+      --df-messenger-send-icon-color-hover:rgb(78, 249, 78);
+      --df-messenger-titlebar-title-font-weight:600;
+      --df-messenger-titlebar-font-color: white;
+      --df-messenger-font-color: black;
+      --df-messenger-font-family: Google Sans;
+      --df-messenger-chat-background: white;
+      --df-messenger-chat-bubble-border:900px;
+      --df-messenger-message-user-background: #c2e9ff;
+      --df-messenger-message-bot-background: #c2e9ff;
+      bottom: 16px;
+      right: 16px;
+    }
+  </style>
+  </style>
+  </style>
+</body>
+
+</html>
